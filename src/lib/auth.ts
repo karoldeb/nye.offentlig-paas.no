@@ -52,6 +52,7 @@ export const config = {
       clientId: process.env.SLACK_CLIENT_ID!,
       clientSecret: process.env.SLACK_CLIENT_SECRET!,
       token: true,
+      checks: ['pkce', 'nonce'],
       profile(profile, tokens) {
         console.log("profile", profile);
         console.log("tokens", tokens);
